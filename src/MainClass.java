@@ -1,18 +1,40 @@
+import java.io.IOException;
 
 public class MainClass {
 
-	public static void main(String[] args) {
-
-		int a = 90;
-		int b = 35;
-		int c = 32;
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Enter 1st number");
+		int number1 = InputClass.readInteger();
+		
+		System.out.println("Enter 2nd number");
+		int number2 = InputClass.readInteger();
+		
+		int i = MenuClass.menu();
+		
 		MathsOperators m = new MathsOperators();
-		m.add(a, b, c);
-		m.subtract(a, b, c);
-		m.multiply(a, b, c);
-		m.divide(a, b);
-		m.square(a);
-		m.cube(b);
+		
+		if(i==1){
+			m.add(number1, number2);
+		}else if(i==2) {
+			m.subtract(number1, number2);
+		}else if(i==3) {
+			m.multiply(number1, number2);
+		}else if(i==4) {
+			m.divide(number1, number2);
+		}else if(i==5) {
+			m.square(number2);
+		}else if(i==6) {
+			m.cube(number1);
+		}else {
+			System.out.println("Please enter valid number ");
+			MenuClass.menu();
+		}
+		
+		
+		
+		
 	}
 
 }
+

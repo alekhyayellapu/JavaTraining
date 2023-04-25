@@ -1,19 +1,19 @@
 
 public class MathsOperators {
 	
-	public void add(int a, int b, int c) {
-		int result = a + b + c;
-		System.out.println("Addition of "+a+", "+b+" and "+ c+" : "+result);
+	public void add(int a, int b) {
+		int result = a + b;
+		System.out.println("Addition of "+a+" and "+ b+" : "+result);
 	}
 	
-	public void subtract(int a, int b, int c) {
-		int result = a - b - c;
-		System.out.println("Subtraction of "+a+", "+b+" and "+ c+" : "+result);
+	public void subtract(int a, int b) {
+		int result = a - b;
+		System.out.println("Subtraction of "+a+" and "+ b+" : "+result);
 	}
 	
-	public void multiply(int a, int b, int c) {
-		int result = a * b * c;
-		System.out.println("Multiplication of "+a+", "+b+" and "+ c+" : "+result);
+	public void multiply(int a, int b) {
+		int result = a * b ;
+		System.out.println("Multiplication of "+a+" and "+ b+" : "+result);
 	}
 	
 	public void divide(int a, int b) {
