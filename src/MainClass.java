@@ -5,10 +5,10 @@ public class MainClass {
 	public static void main(String[] args) throws IOException {
 		
 		System.out.println("Enter 1st number");
-		int number1 = InputClass.readInteger();
+		int number1 = BasicInputClass.readInteger();
 		
 		System.out.println("Enter 2nd number");
-		int number2 = InputClass.readInteger();
+		int number2 = BasicInputClass.readInteger();
 		
 		int i = MenuClass.menu();
 		
